@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Upplands Väsby</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+    padding: 5px;
+    text-align: center;
+    background: #9DC193;
+    color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+}
+
+
+
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Upplands Väsby</h1>
+  <h2>Kommun</h2>
+</div>
+
+
+<div class="row">
+  <div class="side">
+      <h2>Nyheter</h2>
+
+<button class="collapsible">Spola inte ner skräp i toaletten!</button>
+<div class="content">
+  <p><h5>2019-03-11</h5>Varje vecka fastnar ungefär 17 ton, alltså 17 000 kilo, skräp i rensgallren på Käppalaverket där avloppsvattnet från vår kommun renas. Det är nästan 900 ton, eller 900 000 kilo skräp varje år. Den mängden vill vi minska. Och du kan hjälpa till!</p>
+</div>
+
+<button class="collapsible">Vad gör du i Väsbyvintern?</button>
+<div class="content">
+  <p><h5>2019-03-07</h5>Känns vintern lång och sömnig? Nu vill vi samla inspiration till vad man kan hitta på för utomhusaktiviteter med #väsbyvinter!Det finns forskning som menar att med endast 20 minuters utomhusvistelse per dag minimerar Nordbor risken att drabbas av så kallad ”vinterdepression”. Att vara utomhus har flera hälsofrämjande effekter, så det finns all anledning att gå ut vintertid. Men vad kan man hitta på för att överbrygga hinder som gråmulenhet, slask och kyla? Utan att behöva ett helt lov eller åka 50 mil bort? För att sprida inspiration vill Upplands Väsby kommun samla och ge tips under hashtaggen #väsbyvinter. Vi hoppas du vill vara med och dela dina bästa idéer och tips! Vad gör du utomhus i Väsby under mars månad? Ta en bild eller gör en film och lägg ut på sociala medier med taggen #väsbyvinter! 
+ <br><br>
+ Av de taggade bidragen som läggs upp på Facebook eller Instagram utser en jury från kommunikationsenheten fem bilder som får en Väsby-mössa. Observera att din profil eller inlägget specifika inställning måste vara offentlig för att ditt bidrag ska vara med i tävlingen. Tävlingen pågår till och med den 18e mars och vinnare tillkännages den 20e mars på Upplands Väsbys facebook och instrgram. Vi kontaktar vinnaren i den kanal de lämnat sitt bidrag – priset skickas per post! 
+ </p>
+</div>
+
+<button class="collapsible">Klartecken för planering av ny grundskola</button>
+<div class="content">
+  <p><h5>2019-03-06</h5>Kommunstyrelsen vill projektera för en grundskola om 600 platser till höstterminen 2023. Grundskolan är tänkt att byggas på Smedsgärdet, norr om Vilundaparken. Beslutet tas för att kunna tillgodose kommunens behov av grund- och förskoleplatser till 2023. Smedsgärdet har kommit till som ett alternativ till den tidigare planeringen av en grundskola i Vilundaparken. Det projektet lades ned efter svårigheter att kunna bygga där. Behovet av en ny grundskola finns dock kvar och grundar sig på analysen av den senaste befolkningsprognosen. 
+<br><br>
+- Skolan på Smedsgärdet gör att vi täcker underskottet på grundskoleplatser som hade uppstått 2023 och täcker behovet fram till 2026 då vi ser behov av ytterligare grundskoleplatser, säger fastighetsstrateg Björn Sundberg.
+<br><br>
+Marken vid Smedsgärdet är den enda obebyggda mark i centralt läge och som har en gällande detaljplan som medger byggnation av skola/förskola.
+<br><br>
+- Det är jättebra att kommunen snabbt hittade nya vägar framåt efter negativa besked från länsstyrelsen om planerna vid Vilunda. Med den nya skolan på Smedsgärdet möter vi upp behovet av skolplatser i centrala Väsby, säger Joanna Masoura (M), ordförande i utbildningsnämnden.
+<br><br>
+Kommunstyrelsens beslut i måndags innebär att tjänstemän inom kommunen får i uppdrag att gå vidare med en projektering som innebär utredningar av både praktiska och tekniska frågor kring uppförandet av en grundskola. I utredningen ingår också att ta ställning till behovet av en eventuell förskola i lokalerna.
+<br><br>
+Den beräknade kostnaden för skolan, 275 miljoner, finns med i flerårsplanen 2019-2022.
+ </p>
+</div>
+    
+</div>
+  
+<div class="main">
+
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Förskola/skola')"id="defaultOpen">Förskola/skola</button>
+  <button class="tablinks" onclick="openTab(event, 'Trafik och Resa')">Trafik och Resa</button>
+  <button class="tablinks" onclick="openTab(event, 'Kontakt')">Kontakt</button>
+</div>
+
+<!-- Tab content -->
+<div id="Förskola/skola" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+<h3>Förskola/skola</h3>
+  <ul>
+  <li>Förskola</li>
+  <li>Grundskola</li>
+  <li>Gymnasium</li>
+  <li>Vuxenutbildning</li>
+</ul>
+</div>
+
+<div id="Trafik och Resa" class="tabcontent">
+<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Trafik och Resa</h3>
+<ul>
+  <li>Bus, Båt och Tåg</li>
+  <li>Trafik och gator</li>
+  <li>Renhållning och snöröjning</li>
+  <li>Torg och allmänna platser</li>
+</ul>
+ 
+</div>
+
+<div id="Kontakt" class="tabcontent">
+<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <h3>Kontakt</h3>
+<address>
+Written by <a href="mailto:Upplandsvasby@example.com">Upplandsväsby</a>.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Upplandsväsby<br>
+Sverige
+</address>
+</div>
+      
+</div>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script>
+
+ function openTab(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+   
+</body>
+</html>
